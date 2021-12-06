@@ -1,0 +1,11 @@
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+public class CodeFast {
+
+    @Test
+    public void testSayHello() {
+        Code code = new Code();
+        assertEquals("Hello World!", code.sayHello());
+    }
+}
