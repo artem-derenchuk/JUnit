@@ -10,14 +10,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class BankAccountRepeatedTest {
 
     @RepeatedTest(5)
-    @DisplayName("Deposit 400 successfully")
+    @DisplayName("Deposit 500 successfully")
     public void testDeposit(BankAccount bankAccount) {
         bankAccount.deposit(500);
         assertEquals(500, bankAccount.getBalance());
     }
 
     @RepeatedTest(5)
-    @DisplayName("Deposit 400 successfully")
+    @DisplayName("Deposit 500 successfully")
     public void testDepositRepetitionInfo(BankAccount bankAccount, RepetitionInfo repetitionInfo) {
         bankAccount.deposit(500);
         assertEquals(500, bankAccount.getBalance());
