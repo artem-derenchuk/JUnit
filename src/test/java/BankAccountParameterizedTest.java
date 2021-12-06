@@ -26,7 +26,7 @@ public class BankAccountParameterizedTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "details.csv", delimiter = ';')
+    @CsvFileSource(resources = "details.csv", delimiter = ',')
     public void depositAndNameTest(double amount, String name, BankAccount bankAccount) {
         bankAccount.deposit(amount);
         bankAccount.setHolderName(name);

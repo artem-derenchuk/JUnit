@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class BankAccountTest {
 
     @Test
-    @DisplayName("Withdraw 500 succesfully")
+    @DisplayName("Withdraw 500 successfully")
     public void testWithDraw() {
         BankAccount bankAccount = new BankAccount(500, -1000);
         bankAccount.withdraw(300);
@@ -17,7 +17,7 @@ public class BankAccountTest {
     }
 
     @Test
-    @DisplayName("Deposit 400 succesfully")
+    @DisplayName("Deposit 400 successfully")
     public void testDeposit() {
         BankAccount bankAccount = new BankAccount(400, 0);
         bankAccount.deposit(500);
